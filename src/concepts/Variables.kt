@@ -1,32 +1,41 @@
 package concepts
 
 fun main() {
-    // var
-    var num = 28
+    /**
+     * Demonstration of 'var' keyword in Kotlin
+     * 'var' is mutable, meaning the value of the variable can be changed.
+     */
+    var number = 28
     var name = "Amit"
-    var alpha = 'M'
+    var alphabet = 'M'
     var profit = 58.98987F
-    var profitVal = 578.4575759612347
-    var love = true
+    var profitValue = 578.4575759612347
+    var isLoved = true
 
-    println(num)
-    println(name)
-    println(alpha)
-    println(profit)
-    println(profitVal)
-    println(love)
+    println("Number: $number")
+    println("Name: $name")
+    println("Alphabet: $alphabet")
+    println("Profit: $profit")
+    println("Profit Value: $profitValue")
+    println("Is Loved: $isLoved")
 
-    // val
-    val numb = 7
-    val named = "Manisha"
-    val alp = 'A'
+    /**
+     * Demonstration of 'val' keyword in Kotlin
+     * 'val' is immutable, meaning the value of the variable cannot be changed once assigned.
+     */
+
+    val num = 7
+    val personName = "Manisha"
+    val letter = 'A'
     val loss = 0.08F
-    val lossVal = 6878.544800
-    val hate = false
+    val lossValue = 6878.544800
+    val isHated = false
+    // changing any of above variable will create compile time error
 
-    println(numb)
-    println(named)
-    println(alp)
-    println(loss)
-    println(hate)
+    println("Number: $num")
+    println("Person Name: $personName")
+    println("Letter: $letter")
+    println("Loss: $loss")
+    println("Loss Value: $lossValue")
+    println("Is Hated: $isHated")
 }
