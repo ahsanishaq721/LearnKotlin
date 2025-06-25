@@ -2,118 +2,95 @@ package concepts
 
 fun main() {
 
-    /*
-
-   // Arithmetic Operators
-
+    /**
+     * Arithmetic Operators
+     */
     val num1 = 58.5
     val num2 = 6.5
 
-    var res : Double
+    var result: Double
 
-    res= num1+num2
+    result = num1 + num2
+    println("Addition: $result")
 
-    println(res);
+    result = num1 - num2
+    println("Subtraction: $result")
 
-    res = num1-num2
+    result = num1 * num2
+    println("Multiplication: $result")
 
-    println(res)
+    result = num1 / num2
+    println("Division: $result")
 
-    res = num1*num2
+    result = num1 % num2
+    println("Modulus: $result")
 
-    println(res)
-
-    res = num1/num2
-
-    println(res)
-
-    res = num1%num2
-
-    println(res)
-
- */
-
-
-    /*
-
-    // Comparison Operator -- > Returns Boolean result
-
-    val num1 = 58.6
-    val num2 = 6.5
-
-    var res : Boolean
-
-    res = num1==num2
-
-    println(res)
-
-    res = num1!=num2
-
-    println(res)
-
-    res = num1<num2
-
-    println(res)
-
-    res = num1>num2
-
-    println(res)
-
-    res = num1<=num2
-
-    println(res)
-
-    res = num1>=num2
-
-    println(res)
-
+    /**
+     * Comparison Operators - Returns Boolean result
      */
+    val num3 = 58.6
+    val num4 = 6.5
 
-    /*
+    var comparisonResult: Boolean
 
-      //Final Project Assignment Operator
+    comparisonResult = num3 == num4
+    println("Equal to: $comparisonResult")
 
-       var num1 = 58.5
-       val num2 = 6.5
+    comparisonResult = num3 != num4
+    println("Not equal to: $comparisonResult")
 
-       num1+=num2
-       println(num1)
+    comparisonResult = num3 < num4
+    println("Less than: $comparisonResult")
 
-       num1-=num2
-       println(num1)
+    comparisonResult = num3 > num4
+    println("Greater than: $comparisonResult")
 
-       num1*=num2
-       println(num1)
+    comparisonResult = num3 <= num4
+    println("Less than or equal to: $comparisonResult")
 
-       num1/=num2
-       println(num1)
+    comparisonResult = num3 >= num4
+    println("Greater than or equal to: $comparisonResult")
 
-       num1%=num2
-       println(num1)
-
+    /**
+     * Assignment Operators
      */
+    var num5 = 58.5
+    val num6 = 6.5
 
-    // Increment & Decrement Operators
+    num5 += num6
+    println("Addition assignment: $num5")
 
-    var num1 = 45
-    var num2 = 30
-    var num3 = 50
-    var num4 = 65
+    num5 -= num6
+    println("Subtraction assignment: $num5")
 
-    num1++
+    num5 *= num6
+    println("Multiplication assignment: $num5")
 
-    println(num1)
+    num5 /= num6
+    println("Division assignment: $num5")
 
-    num2--
+    num5 %= num6
+    println("Modulus assignment: $num5")
 
-    println(num2)
+    /**
+     * Increment & Decrement Operators
+     */
+    var num7 = 45
+    var num8 = 30
+    var num9 = 50
+    var num10 = 65
 
-    println(++num3)
+    println("Initial num7: $num7")
+    num7++
+    println("Post-increment num7: $num7")
 
-    println(--num4)
+    println("Initial num8: $num8")
+    num8--
+    println("Post-decrement num8: $num8")
 
-    println(num3++);
+    println("Pre-increment num9: ${++num9}")
+    println("Pre-decrement num10: ${--num10}")
 
-    println(num4--);
-
+    println("Post-increment num9: ${num9++}")
+    println("Post-decrement num10: ${num10--}")
 }
